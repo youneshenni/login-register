@@ -1,0 +1,13 @@
+<% if (error) { %>
+<div style="color: red" role="alert"><%= error %></div>
+<% } %>
+
+<form action="/register" method="post">
+  <label for="name">Nom</label><input type="text" name="name" id="name" /><br />
+  <label for="email">E-mail</label
+  ><input type="email" id="email" name="email" /><br /><label for="password"
+    >Password</label
+  ><input type="password" name="password" id="password" /><input
+    type="submit"
+  />
+</form>
